@@ -1,0 +1,15 @@
+{
+  "name": "yts",
+  "description": "this is for skipping ads on youtube",
+  "version": "1.0",
+  "manifest_version": 3,
+
+  "content_scripts": [
+    {
+      "js": ["script.js"],
+      "run_at": "document_idle",
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "permissions": ["activeTab", "tabs"]
+}
